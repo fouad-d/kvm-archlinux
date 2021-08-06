@@ -1,0 +1,12 @@
+virsh list --all
+
+sudo vim defualt.xml
+sudo virsh net-define --file defualt.xml
+sudo virsh net-start --network defualt.xml
+sudo virsh net-autostart --network default
+
+
+sudo vim br10.xml
+sudo virsh net-define --file br10.xml
+sudo virsh net-start --network br10.xml
+sudo virsh net-autostart --network br10
